@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    android:orientation="vertical"
+    android:background="@drawable/button5"
+    tools:context=".Help" >
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnInstructions"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/webView1"
+        android:layout_below="@+id/webView1"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button5"
+        android:onClick="OnClick"
+        android:text="@string/Instructions" />
+
+</RelativeLayout>

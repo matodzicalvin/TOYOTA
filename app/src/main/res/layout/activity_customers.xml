@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button50"
+    android:orientation="vertical"
+    tools:context="com.example.codetribe.toyota.Customers">
+
+    <Button
+        android:id="@+id/btnBookRepair"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnBookService"
+        android:layout_below="@+id/btnBookService"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button5"
+        android:onClick="onClick"
+        android:text="@string/BookRepair" />
+
+    <Button
+        android:id="@+id/btnOderParts"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnBookRepair"
+        android:layout_below="@+id/btnBookRepair"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button5"
+        android:onClick="onClick"
+        android:text="@string/OrderPartss" />
+
+    <Button
+        android:id="@+id/btnBookService"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/webView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button5"
+        android:onClick="onClick"
+        android:text="@string/BookService" />
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnOderParts"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/button5"
+        android:text="@string/buy" />
+
+</RelativeLayout>

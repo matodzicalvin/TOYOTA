@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button50"
+    tools:context="com.example.codetribe.toyota.MainMenu">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/linearlayout_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btnCusPromo"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/button5"
+            android:padding="10dp"
+            android:text="@string/CusPromo"
+            android:textColor="#F8F8FF" />
+
+        <Button
+            android:id="@+id/btnCusCamp"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/button5"
+            android:padding="10dp"
+            android:text="@string/CusCamp"
+            android:textColor="#F8F8FF" />
+
+        <Button
+            android:id="@+id/btnCust"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/button5"
+            android:padding="10dp"
+            android:text="@string/Cust"
+            android:textColor="#F8F8FF" />
+
+        <Button
+            android:id="@+id/btnAboutUs"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/button5"
+            android:padding="10dp"
+            android:text="@string/AboutToyota"
+            android:textColor="#F8F8FF" />
+
+        <Button
+            android:id="@+id/btnContactUs"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/button5"
+            android:padding="10dp"
+            android:text="@string/ContactToyota"
+            android:textColor="#F8F8FF" />
+
+        <Button
+            android:id="@+id/btnDealership"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/button5"
+            android:padding="10dp"
+            android:text="@string/Dealership"
+            android:textColor="#F8F8FF" />
+
+        <Button
+            android:id="@+id/btnHelp"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/button5"
+            android:padding="10dp"
+            android:text="@string/Help"
+            android:textColor="#F8F8FF" />
+
+        <Button
+            android:id="@+id/btnAdministratorPage"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/button5"
+            android:padding="10dp"
+            android:text="@string/AdministratorPage"
+            android:textColor="#F8F8FF" />
+    </LinearLayout>
+
+</RelativeLayout>

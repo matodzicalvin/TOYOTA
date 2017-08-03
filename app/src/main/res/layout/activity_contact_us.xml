@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button5"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/button5"
+        android:onClick="OnClick"
+        android:text="@string/Home"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/webView1"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

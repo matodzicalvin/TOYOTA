@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <!-- Input FirstName -->
+
+    <EditText
+        android:id="@+id/inputFirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:maxLength="15"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/FirstName"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+
+
+    <!-- Input Mobile -->
+
+    <EditText
+        android:id="@+id/inputMobile"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/Mobile"
+        android:digits="0123456789"
+        android:layout_marginBottom="15dip"
+        android:inputType="phone"
+        android:singleLine="true" />
+
+
+    <!-- Input VIN -->
+
+    <EditText
+        android:id="@+id/inputVIN"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:maxLength="17"
+        android:hint="@string/VIN"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+    <!-- Input Order -->
+
+    <EditText
+        android:id="@+id/inputOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:padding="10dp"
+        android:maxLength="30"
+        android:background="@drawable/rounded_edittext"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.()0123456789*-"
+        android:layout_marginBottom="15dip"
+        android:hint="@string/Order"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+
+    <!-- Button Order -->
+
+    <Button
+        android:id="@+id/btnOrderParts"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:background="@drawable/button5"
+        android:text="@string/BookOrder" />
+
+</LinearLayout>

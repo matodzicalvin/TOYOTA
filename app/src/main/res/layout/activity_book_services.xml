@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button50"
+    android:orientation="vertical" >
+
+
+    <!-- Input VehicleModel -->
+
+    <EditText
+        android:id="@+id/inputVehicleModel"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dip"
+        android:padding="5dp"
+        android:maxLength="20"
+        android:hint="@string/VehicleModel"
+        android:background="@drawable/rounded_edittext"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+    <!-- Input VIN -->
+
+    <EditText
+        android:id="@+id/inputVIN"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dip"
+        android:padding="5dp"
+        android:maxLength="17"
+        android:hint="@string/VIN"
+        android:background="@drawable/rounded_edittext"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+    <!-- Input Mileage -->
+
+    <EditText
+        android:id="@+id/inputMileage"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dip"
+        android:padding="5dp"
+        android:maxLength="15"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/Mileage"
+        android:digits="0123456789"
+        android:layout_marginBottom="15dip"
+        android:inputType="number"
+        android:singleLine="true" />
+
+
+    <!-- Input FirstName -->
+
+    <EditText
+        android:id="@+id/inputFirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dip"
+        android:padding="5dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/FirstName"
+        android:maxLength="15"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+
+    <!-- Input Tel -->
+
+    <EditText
+        android:id="@+id/inputTel"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:gravity="top"
+        android:hint="@string/Tel"
+        android:background="@drawable/rounded_edittext"
+        android:padding="5dp"
+        android:maxLength="10"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <!-- ServiceDate Label -->
+
+
+    <!-- Input Tel -->
+
+    <EditText
+        android:id="@+id/inputServiceDate"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:background="@drawable/rounded_edittext"
+        android:digits="0123456789-"
+        android:gravity="top"
+        android:hint="@string/YYMMDD"
+        android:inputType="date"
+        android:maxLength="10"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <!-- Button Add Promotions -->
+
+    <Button
+        android:id="@+id/btnBookService"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/button5"
+        android:text="@string/BookService" />
+
+</LinearLayout>

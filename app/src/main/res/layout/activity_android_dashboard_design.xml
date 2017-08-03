@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button50"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dip"
+        android:padding="5dp"
+        android:maxLength="20"
+        android:hint="id"
+        android:background="@drawable/rounded_edittext"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+    <!-- Input VehicleModel -->
+
+    <EditText
+        android:id="@+id/inputVehicleModel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dip"
+        android:padding="5dp"
+        android:layout_below="@+id/editTextId"
+        android:maxLength="20"
+        android:hint="@string/VehicleModel"
+        android:background="@drawable/rounded_edittext"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+    <!-- Input VIN -->
+
+    <EditText
+        android:id="@+id/inputVIN"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dip"
+        android:padding="5dp"
+        android:layout_below="@+id/inputVehicleModel"
+        android:maxLength="17"
+        android:hint="@string/VIN"
+        android:background="@drawable/rounded_edittext"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+    <!-- Input Mileage -->
+
+    <EditText
+        android:id="@+id/inputMileage"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dip"
+        android:layout_below="@+id/inputVIN"
+        android:padding="5dp"
+        android:maxLength="15"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/Mileage"
+        android:digits="0123456789"
+        android:layout_marginBottom="15dip"
+        android:inputType="number"
+        android:singleLine="true" />
+
+
+    <!-- Input FirstName -->
+
+    <EditText
+        android:id="@+id/inputFirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dip"
+        android:padding="5dp"
+        android:layout_below="@+id/inputMileage"
+        android:background="@drawable/rounded_edittext"
+        android:hint="@string/FirstName"
+        android:maxLength="15"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+
+    <!-- Input Tel -->
+
+    <EditText
+        android:id="@+id/inputTel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dip"
+        android:layout_marginBottom="15dip"
+        android:gravity="top"
+        android:hint="@string/Tel"
+        android:layout_below="@+id/inputFirstName"
+        android:background="@drawable/rounded_edittext"
+        android:padding="5dp"
+        android:maxLength="10"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <!-- ServiceDate Label -->
+
+
+    <!-- Input Tel -->
+
+    <EditText
+        android:id="@+id/inputServiceDate"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dip"
+        android:layout_below="@+id/inputTel"
+        android:layout_marginBottom="15dip"
+        android:background="@drawable/rounded_edittext"
+        android:digits="0123456789-"
+        android:gravity="top"
+        android:hint="@string/YYMMDD"
+        android:inputType="date"
+        android:maxLength="10"
+        android:padding="5dp"
+        android:singleLine="true" />
+
+    <!-- Button Add Promotions -->
+
+    <Button
+        android:id="@+id/btnPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputServiceDate"
+        android:background="@drawable/button5"
+        android:text="PREVIOUS"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:background="@drawable/button5"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:layout_alignBottom="@+id/btnPrev"
+        android:layout_centerHorizontal="true"
+        android:text="SAVE" />
+
+    <Button
+
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSave"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button5"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold|italic"
+        android:layout_marginRight="20dp"
+        android:text="NEXT" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+      android:layout_margin="15dp"
+        android:textColor="#000000"
+        android:background="@drawable/button5"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DELETE"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/btnPrev"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dp"
+        android:textColor="#000000"
+        android:background="@drawable/button5"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold|italic"
+        android:text="MAIN MENU"
+        android:layout_below="@+id/btnDelete"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+    </ScrollView>

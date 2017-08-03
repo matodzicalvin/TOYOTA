@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.codetribe.toyota">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/toyotalogo005"
+        android:label="TOYOTA"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity android:name=".MainMenu" />
+        <activity android:name=".Promotions" />
+        <activity android:name=".Campaigns" />
+        <activity android:name=".Customers" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".Dealership" />
+        <activity android:name=".Help" />
+        <activity android:name=".AdministratorLoginPage" />
+        <activity android:name=".BookServices" />
+        <activity android:name=".BookRepairs" />
+        <activity android:name=".OrderParts" />
+        <activity android:name=".WorkingHours" />
+        <activity android:name=".Istructions" />
+        <activity android:name=".Developers" />
+        <activity android:name=".FixedInstruction" />
+        <activity android:name=".AdminPostDeleteMenu" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".AndroidDashboardDesignActivity" />
+        <activity android:name=".AdminDeletePost" />
+        <activity android:name=".ViewPassWord" />
+        <activity android:name=".Repairclass" />
+        <activity android:name=".Orderclass"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button50"
+    android:orientation="vertical" >
+
+
+
+    <!-- Input FirstName -->
+
+    <EditText
+        android:id="@+id/inputFirstName"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:maxLength="15"
+        android:background="@drawable/rounded_edittext"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:hint="@string/FirstName"
+        android:singleLine="true" />
+
+
+
+
+    <!-- Input Mobile -->
+
+    <EditText
+        android:id="@+id/inputMobile"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:maxLength="10"
+        android:background="@drawable/rounded_edittext"
+        android:padding="10dp"
+        android:digits="0123456789"
+        android:layout_marginBottom="15dip"
+        android:hint="@string/Mobile"
+        android:inputType="phone"
+        android:singleLine="true" />
+
+
+
+    <!-- Input VIN -->
+
+    <EditText
+        android:id="@+id/inputVIN"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:padding="10dp"
+        android:maxLength="17"
+        android:hint="@string/VIN"
+        android:background="@drawable/rounded_edittext"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:layout_marginBottom="15dip"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+    <!-- Input Repair -->
+
+    <EditText
+        android:id="@+id/inputRepair"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:layout_marginBottom="15dip"
+        android:background="@drawable/rounded_edittext"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.()"
+        android:hint="@string/RRepair"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:padding="10dp"
+        android:singleLine="true" />
+
+
+    <!-- Input RepairDate -->
+
+    <EditText
+        android:id="@+id/inputRepairDate"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginBottom="15dip"
+        android:gravity="top"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:hint="@string/YYMMDD"
+        android:digits="0123456789-"
+        android:inputType="date"
+        android:singleLine="true" />
+
+    <!-- Button Add Promotions -->
+
+    <Button
+        android:id="@+id/btnBookRepair"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_margin="15dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/button5"
+        android:text="@string/BookRepair" />
+
+</LinearLayout>
